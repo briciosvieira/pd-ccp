@@ -20,10 +20,12 @@ export class ComprasService {
             data: {
                 num_quote: pdcomprasDto.num_quote,
                 num_pd_venda: this.random.gerarNumAleatorios().toString(),
+                num_proposta: this.random.gerarNumAleatorios().toString()
             },
             select: {
                 num_quote: true,
-                num_pd_venda: true
+                num_pd_venda: true,
+                num_proposta: true
             }
         })
         return compras;

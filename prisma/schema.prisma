@@ -18,4 +18,5 @@ model pdcompras {
   id    Int    @id @default(autoincrement())
   num_pd_venda String @unique
   num_quote String @unique
+  num_proposta String @unique
 }
